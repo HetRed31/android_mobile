@@ -17,6 +17,9 @@
       <SelectionState runConfigName="composearticle_4_3">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="taskmanager_4_4">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

@@ -23,3 +23,4 @@ rootProject.name = "lab4"
 include(":app")
 include(":app:4_1")
 include(":happybirthday_4_2")
+include(":composearticle_4_3")

@@ -20,6 +20,9 @@
       <SelectionState runConfigName="taskmanager_4_4">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="compose_quadrant_4_5">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

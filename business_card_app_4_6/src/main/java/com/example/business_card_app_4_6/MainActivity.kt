@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -55,13 +56,19 @@ fun BusinessCardapp() {
                 .fillMaxWidth(),
             verticalArrangement = Arrangement.Center, // Центрируем по вертикали
             horizontalAlignment = Alignment.CenterHorizontally
-        ) {
+        )
+        {
+
+            Box{
             val image = painterResource(R.drawable.icons_card)
             Image(
                 painter = image,
                 contentDescription = "Profile photo",
                 modifier = Modifier.size(100.dp)
+
+
             )
+            }
             Text(
                 fontSize = 30.sp,
                 text = "Name",

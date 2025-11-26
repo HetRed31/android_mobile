@@ -23,6 +23,9 @@
       <SelectionState runConfigName="compose_quadrant_4_5">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="business_card_app_4_6">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

@@ -54,6 +54,7 @@ fun TaskCompletedScreen() {
     ){
     val image = painterResource (R.drawable.ic_task_completed)
     Image(painter = image, contentDescription = null )
+
     Text(
         text = stringResource(R.string.completed),
         modifier = Modifier.padding(top = 24.dp, bottom = 8.dp),

@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/4_1" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app/4_1" />
             <option value="$PROJECT_DIR$/business_card_app_4_6" />
@@ -17,6 +18,7 @@
             <option value="$PROJECT_DIR$/composearticle_4_3" />
             <option value="$PROJECT_DIR$/happybirthday_4_2" />
             <option value="$PROJECT_DIR$/taskmanager_4_4" />
+            <option value="$PROJECT_DIR$/test2" />
           </set>
         </option>
       </GradleProjectSettings>

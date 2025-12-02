@@ -8,6 +8,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -87,18 +88,48 @@ fun BusinessCardapp() {
                 .padding(bottom = 25.dp), // Отступ снизу
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Text(
-                text = "+00 (00) 000 000",
-                fontSize = 12.sp
-            )
-            Text(
-                text = "@Alex.com",
-                fontSize = 12.sp
-            )
-            Text(
-                text = "Hetred@mail.com",
-                fontSize = 12.sp
-            )
+            Row(
+                modifier = Modifier.padding(bottom = 8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.icon_phone_black),
+                    contentDescription = null,
+                    modifier = Modifier.size(24.dp).padding(end = 8.dp)
+                )
+                Text(
+                    text = "+00 (00) 000 000",
+                    fontSize = 12.sp
+                )
+            }
+            Row(
+                modifier = Modifier.padding(bottom = 8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.icon_share_black),
+                    contentDescription = null,
+                    modifier = Modifier.size(24.dp).padding(end = 8.dp)
+                )
+                Text(
+                    text = "@Alex.com",
+                    fontSize = 12.sp
+                )
+            }
+            Row(
+                modifier = Modifier.padding(bottom = 8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.icon_email_black),
+                    contentDescription = null,
+                    modifier = Modifier.size(24.dp).padding(end = 8.dp)
+                )
+                Text(
+                    text = "Hetred@mail.com",
+                    fontSize = 12.sp
+                )
+            }
         }
     }
 }

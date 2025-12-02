@@ -15,9 +15,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -47,34 +49,30 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
-
-
     Column(
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.Top,
         modifier = modifier
-
-
-
-//        modifier = modifier.padding(8.dp), // отступы вокруг столбца
-//           verticalArrangement = Arrangement.Center //выровнять приветствие по центру экрана
-        )
-    {
-
+    ) {
         Text(
-            text = message,
-            fontSize = 100.sp, //размер шрифта
-            lineHeight = 116.sp, //высота строки
-            textAlign = TextAlign.Center //центр текста
+            text = message,                      // Текст для отображения
+            fontSize = 70.sp,                    // Размер шрифта: 70 масштабируемых пикселей
+            lineHeight = 80.sp,                  // Высота строки для многострочного текста
+            textAlign = TextAlign.Center,        // Горизонтальное выравнивание по центру
+            color = Color.Blue,                  // Цвет текста: синий
+            fontWeight = FontWeight.Bold,        // Жирное начертание шрифта
+            modifier = Modifier                  // Модификатор для настройки элемента
+                .padding(top = 100.dp)           // Отступ сверху: 100 плотностно-независимых пикселей
         )
         Text(
             text = from,
-            fontSize = 36.sp,
+            fontSize = 28.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Medium,
             modifier = Modifier
-                .padding(16.dp) //Отступы
-                .align(alignment = Alignment.CenterHorizontally) //выравнивание по центру
+                .padding(16.dp)
+                .align(alignment = Alignment.CenterHorizontally)
         )
     }
-
 }
 
 

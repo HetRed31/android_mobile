@@ -54,7 +54,7 @@ fun CenteredImageWithButtons(modifier: Modifier = Modifier) {
         ImageAndText(image = R.drawable.kaktus5, text = R.string.title5),
     )
 
-    var viewIndex by remember { mutableStateOf(0) }
+    var viewIndex by remember { mutableStateOf(0) } //текущ состояние
 
     Column(
         modifier = modifier.fillMaxSize(),
@@ -74,8 +74,8 @@ fun CenteredImageWithButtons(modifier: Modifier = Modifier) {
                     shape = RoundedCornerShape(2.dp)
                 )
                 .padding(8.dp)
-                .fillMaxWidth(),  // ← ЭТУ СТРОЧКУ ДОБАВИЛ
-            textAlign = TextAlign.Center  // ← И ЭТУ СТРОЧКУ ДОБАВИЛ
+                .fillMaxWidth(),
+            textAlign = TextAlign.Center
         )
         Row(
             modifier = Modifier
@@ -84,22 +84,25 @@ fun CenteredImageWithButtons(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
 
-            Button(
-                onClick = {
-                    viewIndex = (viewIndex - 1 + resources.size) % resources.size
+            Button(onClick = {
+                if (viewIndex > 0) {  // Если не первая картинка
+                    viewIndex--       // Просто уменьшаем на 1
+                } else {              // Если первая (номер 0)
+                    viewIndex = resources.size - 1  // Переходим к последней
                 }
-            ) {
-                Text("Назад")
-            }
+            }) { Text("Назад") }
 
-            Button(
-                onClick = {
-                    viewIndex = (viewIndex + 1) % resources.size
+
+            Button(onClick = {
+                if (viewIndex < resources.size - 1) {  // Если не последняя картинка
+                    viewIndex++       // Просто увеличиваем на 1
+                } else {              // Если последняя
+                    viewIndex = 0     // Возвращаемся к первой (номер 0)
                 }
-            ) {
-                Text("Вперед")
-            }
+            }) { Text("Вперед") }
         }
+
+
     }
 }
 

@@ -9,7 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/affirmations_app_5" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/art_space_5_4" />
+            <option value="$PROJECT_DIR$/calculator_5_3" />
+            <option value="$PROJECT_DIR$/dice_roller_5_1" />
+            <option value="$PROJECT_DIR$/lemonade_5_2" />
+            <option value="$PROJECT_DIR$/test_1" />
           </set>
         </option>
       </GradleProjectSettings>

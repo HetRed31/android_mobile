@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun AffirmationsApp() {
+fun AffirmationsApp() {                                            //главный экран
     AffirmationList(
         affirmationList = Datasource().loadAffirmations(),
     )
@@ -69,7 +69,7 @@ fun AffirmationsApp() {
 
 @Composable
 fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Modifier) {
-    LazyColumn(modifier = modifier) {
+    LazyColumn(modifier = modifier) {               //для прокрутки(загружает не все сразу)
         items(affirmationList) { affirmation ->
             AffirmationCard(
                 affirmation = affirmation,
@@ -89,7 +89,7 @@ fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(194.dp),
-                contentScale = ContentScale.Crop
+                contentScale = ContentScale.Crop             //обрезкаи на фул экран
             )
             Text(
                 text = LocalContext.current.getString(affirmation.stringResourceId),

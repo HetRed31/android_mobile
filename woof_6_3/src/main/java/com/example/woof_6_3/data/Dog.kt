@@ -14,7 +14,7 @@ data class Dog(
     @StringRes val hobbies: Int
 )
 
-val dogs = listOf(
+val dogs = listOf(       //список объектов
     Dog(R.drawable.koda, R.string.dog_name_1, 2, R.string.dog_description_1),
     Dog(R.drawable.lola, R.string.dog_name_2, 16, R.string.dog_description_2),
     Dog(R.drawable.frankie, R.string.dog_name_3, 2, R.string.dog_description_3),

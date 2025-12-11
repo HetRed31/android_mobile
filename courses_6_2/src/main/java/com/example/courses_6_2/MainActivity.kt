@@ -53,14 +53,15 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun TopicGrid(modifier: Modifier = Modifier) {
+    // Создание вертикальной сетки
     LazyVerticalGrid(
-        columns = GridCells.Fixed(2),
+        columns = GridCells.Fixed(2), // 2 колонки
         verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
         horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.padding_small)),
         contentPadding = PaddingValues(dimensionResource(R.dimen.padding_small)),
         modifier = modifier.fillMaxSize()
     ) {
-        items(DataSource.topics) { topic ->
+        items(DataSource.topics) { topic ->         //числа
             TopicCard(topic)
         }
     }
@@ -72,7 +73,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
         Row {
             Box {
                 Image(
-                    painter = painterResource(id = topic.imageRes),
+                    painter = painterResource(id = topic.imageRes), // Загружаем изображение
                     contentDescription = null,
                     modifier = Modifier
                         .size(width = 68.dp, height = 68.dp)

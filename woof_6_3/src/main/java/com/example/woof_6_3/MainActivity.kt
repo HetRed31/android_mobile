@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            WoofTheme(darkTheme = true) {
+            WoofTheme(darkTheme = true) {   //dark
                 Surface(
                     modifier = Modifier.fillMaxSize()
                 ) {
@@ -71,9 +71,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun WoofApp() {
-    Scaffold(
+    Scaffold(        //он
         topBar = {
-            WoofTopAppBar()
+            WoofTopAppBar()  //крутка оф
         }
     ) { it ->
         LazyColumn(contentPadding = it) {
@@ -81,6 +81,7 @@ fun WoofApp() {
                 DogItem(
                     dog = it,
                     modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_small))
+                    //цвет фона + отступы
                 )
             }
         }
@@ -92,8 +93,8 @@ fun DogItem(
     dog: Dog,
     modifier: Modifier = Modifier
 ) {
-    var expanded by remember { mutableStateOf(false) }
-    val color by animateColorAsState(
+    var expanded by remember { mutableStateOf(false) } //проверка при expanded - тру
+    val color by animateColorAsState(             // фун-я для анимации покраски фона
         targetValue = if (expanded) MaterialTheme.colorScheme.tertiaryContainer
         else MaterialTheme.colorScheme.primaryContainer,
     )
@@ -103,7 +104,7 @@ fun DogItem(
         Column(
 
             modifier = Modifier
-                .animateContentSize(         //добавления анимации пружины
+                .animateContentSize(         //добавления анимации пружины/параметр
                     animationSpec = spring(
                         dampingRatio = Spring.DampingRatioNoBouncy, //анимация пружины
                         stiffness = Spring.StiffnessMedium //жесткость пружины
@@ -123,9 +124,9 @@ fun DogItem(
                     onClick = { expanded = !expanded },
                 )
             }
-            if (expanded) {
+            if (expanded) {          //cocтояние expand
                 DogHobby(
-                    dog.hobbies, modifier = Modifier.padding(
+                    dog.hobbies, modifier = Modifier.padding( //отступы : л верх низ п
                         start = dimensionResource(R.dimen.padding_medium),
                         top = dimensionResource(R.dimen.padding_small),
                         bottom = dimensionResource(R.dimen.padding_medium),
@@ -138,7 +139,7 @@ fun DogItem(
 }
 
 @Composable
-private fun DogItemButton(
+private fun DogItemButton(  //раскрытие
     expanded: Boolean,
     onClick: () -> Unit,
     modifier: Modifier = Modifier
@@ -148,7 +149,9 @@ private fun DogItemButton(
         modifier = modifier
     ) {
         Icon(
-            imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore,
+            imageVector = if (expanded) Icons.Filled.ExpandLess else Icons.Filled.ExpandMore, // Иконка зависит от состояния expanded
+            //Icons.Filled.ExpandLess — стрелка вверх (если информация раскрыта).
+            // Icons.Filled.ExpandMore — стрелка вниз (если информация скрыта).
             contentDescription = stringResource(id = R.string.expand_button_content_description),
             tint = MaterialTheme.colorScheme.secondary
         )
@@ -158,7 +161,7 @@ private fun DogItemButton(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WoofTopAppBar(modifier: Modifier = Modifier) {
-    CenterAlignedTopAppBar(
+    CenterAlignedTopAppBar(             //менюшка верхняя
         title = {
             Row(
                 verticalAlignment = Alignment.CenterVertically
@@ -166,7 +169,7 @@ fun WoofTopAppBar(modifier: Modifier = Modifier) {
                 Image(
                     modifier = modifier
                         .size(dimensionResource(id = R.dimen.image_size))
-                        .padding(dimensionResource(id = R.dimen.padding_small)),
+                        .padding(dimensionResource(id = R.dimen.padding_small)),  //обрезка + круг (собаки иконка)
                     painter = painterResource(id = R.drawable.ic_woof_logo),
                     contentDescription = null
                 )
@@ -205,7 +208,7 @@ fun DogInformation(
     Column(modifier = modifier) {
         Text(
             text = stringResource(id = dogName),
-            style = MaterialTheme.typography.displayMedium,
+            style = MaterialTheme.typography.displayMedium,   //подключеение шрифтов
             modifier = Modifier.padding(top = dimensionResource(id = R.dimen.padding_small))
         )
         Text(

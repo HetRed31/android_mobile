@@ -46,7 +46,7 @@ import com.example.superhero_6_4.ui.theme.SuperheroesTheme
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun HeroesList(
-    heroes: List<Hero>,
+    heroes: List<Hero>,         // Список героев
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(0.dp),
 ) {
@@ -88,21 +88,25 @@ fun HeroesList(
     }
 }
 
+//  отображения одного элемента списка
 @Composable
 fun HeroListItem(
     hero: Hero,
     modifier: Modifier = Modifier
 ) {
+    // Карточка Material Design с небольшой тенью
     Card(
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         modifier = modifier,
     ) {
+        // Горизонтальный контейнер для размещения текста и изображения
         Row(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp)
                 .sizeIn(minHeight = 72.dp)
         ) {
+            // Колонка для текста. weight(1f) заставляет ее занимать все доступное пространство.
             Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = stringResource(hero.nameRes),
@@ -114,12 +118,15 @@ fun HeroListItem(
                 )
             }
             Spacer(Modifier.width(16.dp))
+            // Контейнер для изображения
             Box(
                 modifier = Modifier
                     .size(72.dp)
+                    // Обрезаем изображение, чтобы применить скругленные углы
                     .clip(RoundedCornerShape(8.dp))
 
             ) {
+                // Отображение изображения героя
                 Image(
                     painter = painterResource(hero.imageRes),
                     contentDescription = null,
@@ -152,10 +159,6 @@ fun HeroesPreview() {
         Surface (
             color = MaterialTheme.colorScheme.background
         ) {
-            /* Important: It is not a good practice to access data source directly from the UI.
-            In later units you will learn how to use ViewModel in such scenarios that takes the
-            data source as a dependency and exposes heroes.
-            */
             HeroesList(heroes = HeroesRepository.heroes)
         }
     }

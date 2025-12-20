@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">30 Days of Cocktails</string>
+    <string name="day_number">Day %1$d</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="instructions_label">Instructions</string>
+    <string name="expand_button_content_description">Show more</string>
+
+    <!-- Cocktail 1: Rainbow Breeze -->
+    <string name="cocktail_1_name">Rainbow Breeze</string>
+    <string name="cocktail_1_ingredients">• 1 cup pineapple juice\n• 1/2 cup orange juice\n• 1/4 cup grenadine syrup\n• 1/4 cup blue curaçao syrup (non-alcoholic)\n• Ice cubes\n• Fresh fruit for garnish (berries, pineapple, orange)</string>
+    <string name="cocktail_1_instructions">Fill a hurricane glass with ice. Pour pineapple and orange juice, then slowly add grenadine to create a gradient. Top with blue curaçao syrup. Garnish with fresh fruit skewer. Serve immediately and enjoy the tropical paradise!</string>
+
+    <!-- Cocktail 2: Sunrise Sparkle -->
+    <string name="cocktail_2_name">Sunrise Sparkle</string>
+    <string name="cocktail_2_ingredients">• 2 oz fresh orange juice\n• 1 oz pomegranate juice\n• 1 oz lemon juice\n• Sparkling water\n• Ice cubes\n• Maraschino cherry for garnish</string>
+    <string name="cocktail_2_instructions">In a champagne flute, combine orange and pomegranate juice. Add ice and top with sparkling water. Slowly pour lemon juice to create a sunrise effect. Garnish with a maraschino cherry. Perfect for celebrations!</string>
+
+    <!-- Cocktail 3: Blue Lagoon Mocktail -->
+    <string name="cocktail_3_name">Blue Lagoon Mocktail</string>
+    <string name="cocktail_3_ingredients">• 2 oz blue curaçao syrup (non-alcoholic)\n• 3 oz lemonade\n• 1 oz coconut water\n• Ice cubes\n• Lemon slice for garnish</string>
+    <string name="cocktail_3_instructions">Fill a glass with ice cubes. Pour blue curaçao syrup and coconut water. Top with lemonade and stir gently. Garnish with a lemon slice. Transport yourself to a tropical island with every sip!</string>
+
+    <!-- Cocktail 4: Watermelon Sunset -->
+    <string name="cocktail_4_name">Watermelon Sunset</string>
+    <string name="cocktail_4_ingredients">• 1 cup fresh watermelon juice\n• 1/2 cup orange juice\n• 1 tbsp lime juice\n• Ice cubes\n• Lime wheel for garnish\n• Mint leaves</string>
+    <string name="cocktail_4_instructions">Blend fresh watermelon to make juice. In a glass filled with ice, combine watermelon juice, orange juice, and lime juice. Stir well. Garnish with lime wheel and fresh mint leaves. Refreshing and hydrating!</string>
+
+    <!-- Cocktail 5: Virgin Mojito -->
+    <string name="cocktail_5_name">Virgin Mojito</string>
+    <string name="cocktail_5_ingredients">• 10 fresh mint leaves\n• 1/2 lime, cut into wedges\n• 2 tbsp white sugar\n• 1 cup ice cubes\n• 1/2 cup soda water\n• Mint sprig and lime for garnish</string>
+    <string name="cocktail_5_instructions">Muddle mint leaves, lime wedges, and sugar in a glass. Fill with ice cubes. Pour soda water and stir well. Garnish with mint sprig and lime wedge. Classic refreshment for any occasion!</string>
+</resources>

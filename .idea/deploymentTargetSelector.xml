@@ -17,10 +17,7 @@
       <SelectionState runConfigName="woof_6_3">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="seven">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="dessert_clicker_7_1">
+      <SelectionState runConfigName="dessert_7_1">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

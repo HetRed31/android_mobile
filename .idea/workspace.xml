@@ -9,8 +9,39 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_2">
-      <change afterPath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/DessertViewModel.kt" afterDir="false" />
+    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_1 full">
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/androidTest/java/com/example/cupcake_7_3/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/OrderSummaryScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/OrderViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/SelectOptionScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/StartOrderScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/components/CommonUi.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cupcake_7_3/src/test/java/com/example/cupcake_7_3/ExampleUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
@@ -21,11 +52,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessert_7_1/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/dessert_7_1/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +127,7 @@
     "Android App.app.executor": "Run",
     "Android App.coctale.executor": "Run",
     "Android App.courses_6_2.executor": "Run",
+    "Android App.cupcake_7_3.executor": "Run",
     "Android App.dessert_7_1.executor": "Run",
     "Android App.superhero_6_4.executor": "Run",
     "Android App.unscramble_7_2.executor": "Run",
@@ -115,7 +147,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Android App.dessert_7_1">
+  <component name="RunManager" selected="Android App.cupcake_7_3">
     <configuration name="Affirmations_App_6_1" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.Affirmations_App_6_1" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -334,6 +366,78 @@
     </configuration>
     <configuration name="courses_6_2" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.courses_6_2" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cupcake_7_3" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="lab4.cupcake_7_3" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -923,7 +1027,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766489183096</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="7_1 full">
+      <option name="closed" value="true" />
+      <created>1766492466574</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766492466574</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -957,7 +1069,8 @@
     <MESSAGE value="пуш нью репозотирой" />
     <MESSAGE value="7_1" />
     <MESSAGE value="7_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="7_2" />
+    <MESSAGE value="7_1 full" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_1 full" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -980,6 +1093,16 @@
         <entry key="com.example.courses_6_2.test">
           <value>
             <CheckInfo lastCheckTimestamp="1765471175516" />
+          </value>
+        </entry>
+        <entry key="com.example.cupcake_7_3">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766498180962" />
+          </value>
+        </entry>
+        <entry key="com.example.cupcake_7_3.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766498180871" />
           </value>
         </entry>
         <entry key="com.example.dessert_7_1">

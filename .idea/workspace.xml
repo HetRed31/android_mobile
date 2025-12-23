@@ -9,35 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_1">
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/androidTest/java/com/example/unscramble_7_2/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/values-ru/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unscramble_7_2/src/test/java/com/example/unscramble_7_2/ExampleUnitTest.kt" afterDir="false" />
+    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_2">
+      <change afterPath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/DessertViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
@@ -48,18 +21,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_12_2025_14_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_12_2025_14_32__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dessert_7_1/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/dessert_7_1/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +115,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Android App.unscramble_7_2">
+  <component name="RunManager" selected="Android App.dessert_7_1">
     <configuration name="Affirmations_App_6_1" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.Affirmations_App_6_1" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -949,7 +915,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766424928938</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7_2">
+      <option name="closed" value="true" />
+      <created>1766489183096</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766489183096</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -982,7 +956,8 @@
     <MESSAGE value="full2" />
     <MESSAGE value="пуш нью репозотирой" />
     <MESSAGE value="7_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="7_1" />
+    <MESSAGE value="7_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_2" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

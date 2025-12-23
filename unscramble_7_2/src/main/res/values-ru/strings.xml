@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Собери слово</string>
+    <string name="instructions">Расшифруйте слово, используя все буквы.</string>
+    <string name="skip">Пропустить</string>
+    <string name="submit">Отправить</string>
+    <string name="score">Счет: %d</string>
+    <string name="word_count">%d/10</string>
+    <string name="enter_your_word">Введите ваше слово</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="you_scored">"Вы набрали: %d"</string>
+    <string name="exit">Выход</string>
+    <string name="play_again">Играть снова</string>
+    <string name="wrong_guess">Неправильно!</string>
+</resources>

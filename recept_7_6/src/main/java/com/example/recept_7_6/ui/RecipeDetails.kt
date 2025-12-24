@@ -2,12 +2,9 @@ package com.example.recept_7_6.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.calculateEndPadding
-import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -17,10 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -34,32 +28,23 @@ import com.example.recept_7_6.ui.theme.GreetingCardTheme
 fun RecipeDetails(
     selectedRecipe: Recipe,
     onBackPressed: () -> Unit,
-    contentPadding: PaddingValues,
     modifier: Modifier = Modifier
 ) {
     BackHandler {
         onBackPressed()
     }
     val scrollState = rememberScrollState()
-    val layoutDirection = LocalLayoutDirection.current
+    
     Box(
         modifier = modifier
             .verticalScroll(state = scrollState)
-            .padding(top = contentPadding.calculateTopPadding())
     ) {
-        Column(
-            modifier = Modifier
-                .padding(
-                    bottom = contentPadding.calculateTopPadding(),
-                    start = contentPadding.calculateStartPadding(layoutDirection),
-                    end = contentPadding.calculateEndPadding(layoutDirection)
-                )
-        ) {
-            // 1. НАЗВАНИЕ БЛЮДА (НОВЫЙ ЗАГОЛОВОК)
+        Column {
+            // 1. НАЗВАНИЕ БЛЮДА
             Text(
                 text = stringResource(selectedRecipe.titleResourceId),
                 style = MaterialTheme.typography.headlineLarge,
-                color = MaterialTheme.colorScheme.onSurface, // <-- Цвет текста для светлого фона
+                color = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(
@@ -77,7 +62,6 @@ fun RecipeDetails(
                     contentScale = ContentScale.FillWidth,
                     modifier = Modifier.fillMaxWidth()
                 )
-                // УДАЛЯЕМ ГРАДИЕНТ И ТЕКСТ, КОТОРЫЕ БЫЛИ ПОВЕРХ КАРТИНКИ
             }
 
             // 3. ОПИСАНИЕ БЛЮДА
@@ -99,8 +83,7 @@ fun DetailsPreview() {
     GreetingCardTheme {
         RecipeDetails(
             selectedRecipe = DataSource.defaultRecipe,
-            onBackPressed = { },
-            contentPadding = PaddingValues(),
+            onBackPressed = { }
         )
     }
 }

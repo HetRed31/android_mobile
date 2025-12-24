@@ -9,51 +9,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_5">
-      <change afterPath="$PROJECT_DIR$/recept_7_6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/androidTest/java/com/example/recept_7_6/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/data/DataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/model/Recipe.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/model/RecipeCategory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recept_7_6/src/test/java/com/example/recept_7_6/ExampleUnitTest.kt" afterDir="false" />
+    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_6">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dessert.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reply_7_4.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/RecipesApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/RecipesApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipeDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipeDetails.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1348,7 +1320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766562500697</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="7_6">
+      <option name="closed" value="true" />
+      <created>1766570420605</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1766570420605</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1386,7 +1366,8 @@
     <MESSAGE value="2 модуль фул" />
     <MESSAGE value="7_4" />
     <MESSAGE value="7_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="7_5" />
+    <MESSAGE value="7_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_6" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

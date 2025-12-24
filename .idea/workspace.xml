@@ -10,64 +10,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_5">
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/androidTest/java/com/example/sports_app_7_5/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/data/LocalSportsDataProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/model/Sport.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsScreens.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/utils/WindowStateUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_badminton_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_badminton_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_baseball_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_baseball_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_basketball_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_basketball_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_bowling_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_bowling_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_cycling_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_cycling_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_golf_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_golf_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_running_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_running_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_soccer_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_soccer_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_swimming_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_swimming_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_table_tennis_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_table_tennis_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_tennis_banner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/drawable/ic_tennis_square.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/values/dimens.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sports_app_7_5/src/test/java/com/example/sports_app_7_5/ExampleUnitTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/androidTest/java/com/example/recept_7_6/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/data/DataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/model/Recipe.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/model/RecipeCategory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/theme/Type.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept_7_6/src/test/java/com/example/recept_7_6/ExampleUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
@@ -75,13 +47,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dessert.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4.rar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,6 +127,7 @@
     "Android App.cupcake_7_3.executor": "Run",
     "Android App.dessert_7_1.executor": "Run",
     "Android App.navigation.executor": "Run",
+    "Android App.recept_7_6.executor": "Run",
     "Android App.reply_7_4.executor": "Run",
     "Android App.sports_app_7_5.executor": "Run",
     "Android App.superhero_6_4.executor": "Run",
@@ -176,7 +148,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Android App.sports_app_7_5">
+  <component name="RunManager" selected="Android App.recept_7_6">
     <configuration name="Affirmations_App_6_1" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.Affirmations_App_6_1" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -611,6 +583,78 @@
     </configuration>
     <configuration name="navigation" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.navigation" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="recept_7_6" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="lab4.recept_7_6" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -1296,7 +1340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766519952532</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="7_5">
+      <option name="closed" value="true" />
+      <created>1766562500697</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1766562500697</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1389,6 +1441,16 @@
             <CheckInfo lastCheckTimestamp="1766515338365" />
           </value>
         </entry>
+        <entry key="com.example.recept_7_6">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766565054584" />
+          </value>
+        </entry>
+        <entry key="com.example.recept_7_6.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766565054587" />
+          </value>
+        </entry>
         <entry key="com.example.reply_7_4">
           <value>
             <CheckInfo lastCheckTimestamp="1766515876565" />
@@ -1397,6 +1459,16 @@
         <entry key="com.example.reply_7_4.test">
           <value>
             <CheckInfo lastCheckTimestamp="1766515876563" />
+          </value>
+        </entry>
+        <entry key="com.example.sports_app_7_5">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766562223268" />
+          </value>
+        </entry>
+        <entry key="com.example.sports_app_7_5.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1766562223282" />
           </value>
         </entry>
         <entry key="com.example.superhero_6_4">

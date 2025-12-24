@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Сборник рецептов</string>
+    <string name="back_button">Назад</string>
+    <string name="default_string"> </string>
+    <string name="main_courses_category">Основные блюда</string>
+    <string name="desserts_category">Десерты</string>
+    <string name="soups_category">Супы</string>
+    <string name="salads_category">Салаты</string>
+    <string name="drinks_category">Напитки</string>
+    <string name="breakfasts_category">Завтраки</string>
+    <string name="category_lunch">Обед</string>
+    <string name="category_dinner">Ужин</string>
+    <string name="category_appetizer">Закуска</string>
+    <string name="category_beverage">Напиток</string>
+
+    <string name="dessert_1">Торт "Наполеон"</string>
+    <string name="details_1">Классический слоеный торт с заварным кремом. Требует времени и терпения, но результат того стоит. Идеально для праздничного стола.</string>
+    <string name="dessert_2">Шоколадный фондан</string>
+    <string name="details_2">Горячий шоколадный кекс с жидкой начинкой. Подается с шариком ванильного мороженого. Готовится быстро и просто.</string>
+    <string name="dessert_3">Чизкейк "Нью-Йорк"</string>
+    <string name="details_3">Классический чизкейк с нежным сливочным сыром на песочной основе. Плотный и насыщенный вкус. Требует выпекания и охлаждения.</string>
+
+    <string name="main_course_1">Паста "Карбонара"</string>
+    <string name="details_4">Классическая итальянская паста со сливочным соусом, беконом и пармезаном. Готовится за 20 минут. Подается горячей.</string>
+    <string name="main_course_2">Стейк из говядины</string>
+    <string name="details_5">Сочный стейк из говяжьей вырезки, обжаренный до желаемой степени прожарки. Подается с овощами на гриле или картофельным пюре.</string>
+    <string name="main_course_3">Курица в кисло-сладком соусе</string>
+    <string name="details_6">Кусочки куриного филе, обжаренные с овощами в ароматном кисло-сладком соусе. Подается с рисом. Отличное блюдо для ужина.</string>
+    <string name="main_course_4">Рыба, запеченная с овощами</string>
+    <string name="details_7">Филе белой рыбы, запеченное в духовке с помидорами, перцем и травами. Легкое и полезное блюдо. Готовится быстро и просто.</string>
+
+    <string name="soup_1">Борщ</string>
+    <string name="details_8">Традиционный украинский борщ на мясном бульоне со свеклой, капустой и картофелем. Подается со сметаной. Насыщенный и ароматный.</string>
+    <string name="soup_2">Грибной крем-суп</string>
+    <string name="details_9">Нежный крем-суп из шампиньонов со сливками. Подается с гренками. Бархатистая текстура и насыщенный грибной вкус.</string>
+
+    <string name="breakfast_1">Омлет</string>
+    <string name="details_10">Классический омлет из трех яиц с молоком. Пышный и нежный. Можно добавить сыр, ветчину или овощи по вкусу. Готовится за 10 минут.</string>
+    <string name="breakfast_2">Сырники</string>
+    <string name="details_11">Творожные оладьи, обжаренные до золотистой корочки. Подаются со сметаной, вареньем или медом. Идеальный завтрак для всей семьи.</string>
+    <string name="breakfast_3">Овсяная каша</string>
+    <string name="details_12">Полезная овсяная каша на молоке с добавлением ягод и орехов. Заряжает энергией на весь день. Готовится за 15 минут.</string>
+
+    <string name="salad_1">Салат "Цезарь"</string>
+    <string name="details_13">Классический салат с курицей, гренками, пармезаном и соусом "Цезарь". Легкий и сытный. Идеально для обеда или ужина.</string>
+    <string name="salad_2">Греческий салат</string>
+    <string name="details_14">Салат из свежих овощей с сыром фета, оливками и оливковым маслом. Освежающий и полезный. Прекрасное дополнение к любому блюду.</string>
+    <string name="salad_3">Салат с тунцом</string>
+    <string name="details_15">Легкий салат с консервированным тунцом, яйцом, овощами и заправкой на основе йогурта. Сытный и низкокалорийный.</string>
+
+    <string name="drink_1">Клюквенный морс</string>
+    <string name="details_16">Домашний морс из свежей или замороженной клюквы. Освежает и утоляет жажду. Богат витаминами. Можно регулировать сладость по вкусу.</string>
+    <string name="drink_2">Горячий шоколад</string>
+    <string name="details_17">Густой и ароматный горячий шоколад на молоке. Согревает в холодную погоду. Можно добавить корицу или ваниль для аромата.</string>
+    <string name="drink_3">Лимонад</string>
+    <string name="details_18">Домашний лимонад из свежих лимонов. Освежающий и натуральный. Идеально для жаркого дня. Подается со льдом и мятой.</string>
+</resources>

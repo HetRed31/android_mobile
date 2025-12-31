@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Art_Space_5_4</string>
+    <string name="title1">"Нотокактус"\n Растение с шаровидным стеблем</string>
+    <string name="title2">"Ребуция\n Внешне растение похоже на колючий шар</string>
+    <string name="title3">"Эпифиллум\n Его можно узнать по плоскому четырёхгранному стеблю, усыпанному крупными цветками</string>
+    <string name="title4">"Маммилярия\n, Небольшие шарики покрыты множеством острых колючек</string>
+    <string name="title5">"Астрофитум\n жёсткий ребристый стебель и минимальное количество иголок</string>
+</resources>

@@ -1,6 +1,7 @@
 package com.example.dessert_7_1
 
 import android.content.ActivityNotFoundException
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -46,72 +47,89 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.dessert_7_1.ui.theme.DessertClickerTheme
 
-private const val TAG = "MainActivity"
+// Фрагмент кода из MainActivity.kt
 
 class MainActivity : ComponentActivity() {
+    // 1. Жизненный цикл Activity: onCreate - точка входа
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Логирование для отслеживания жизненного цикла (учебная цель)
         Log.d(TAG, "onCreate Called")
+        // Включает отображение контента под системными панелями (статус-бар, навигационная панель)
         enableEdgeToEdge()
+        // Устанавливает Jetpack Compose UI в качестве контента Activity
         setContent {
             DessertClickerTheme {
                 Surface(
+                    // Modifier для заполнения всего доступного пространства
                     modifier = Modifier
                         .fillMaxSize()
+                        // Учитывает отступы для статус-бара, чтобы контент не перекрывался им
                         .statusBarsPadding(),
                 ) {
+                    // Запуск корневой Composable-функции приложения
                     DessertClickerApp()
                 }
             }
         }
     }
 
+    // 2. Методы жизненного цикла Activity:
+    // Все эти методы переопределены для демонстрации и логирования.
+    // ViewModel, в отличие от Activity, переживает изменения конфигурации (например, поворот экрана).
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "onStart Called")
+        Log.v(TAG, "onStart Called")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "onResume Called")
+        Log.v(TAG, "onResume Called")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d(TAG, "onRestart Called")
+        Log.v(TAG, "onRestart Called")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG, "onPause Called")
+        Log.v(TAG, "onPause Called")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "onStop Called")
+        Log.v(TAG, "onStop Called")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG, "onDestroy Called")
+        Log.v(TAG, "onDestroy Called")
     }
 }
 
+
 private fun shareSoldDessertsInformation(intentContext: Context, dessertsSold: Int, revenue: Int) {
+    // Создание Intent с действием ACTION_SEND (отправить)
     val sendIntent = Intent().apply {
         action = Intent.ACTION_SEND
+        // Добавление текста для обмена, используя строковый ресурс
         putExtra(
             Intent.EXTRA_TEXT,
             intentContext.getString(R.string.share_text, dessertsSold, revenue)
         )
+        // Указание типа контента (простой текст)
         type = "text/plain"
     }
 
+    // Создание  пользователь мог выбрать приложение для обмена
     val shareIntent = Intent.createChooser(sendIntent, null)
 
     try {
+        // Запуск Intent
         intentContext.startActivity(shareIntent)
     } catch (e: ActivityNotFoundException) {
+        // Обработка случая, когда нет приложения, способного обработать Intent
         Toast.makeText(
             intentContext,
             intentContext.getString(R.string.sharing_not_available),
@@ -120,23 +138,26 @@ private fun shareSoldDessertsInformation(intentContext: Context, dessertsSold: I
     }
 }
 
+// 4. Корневая Composable-функция (Интеграция с ViewModel)
 @Composable
 private fun DessertClickerApp(
-    // Создаем экземпляр DessertViewModel с помощью компонуемой функции viewModel()
+    // Создаем экземпляр DessertViewModel
+    // ViewModel переживет рекомпозицию и изменения конфигурации.
     viewModel: DessertViewModel = viewModel()
 ) {
     // Наблюдаем за изменениями в uiState StateFlow из ViewModel.
-    // Каждый раз, когда uiState изменяется, эта переменная будет обновляться,
-    // и все компонуемые функции, которые ее используют, будут перерисованы.
+    // 'collectAsState()' преобразует StateFlow в State<T>, который вызывает рекомпозицию.
     val uiState by viewModel.uiState.collectAsState()
+
+    // Передача состояния (State) вниз и обработчика событий (Event) вниз
     DessertClickerApp(
-        uiState = uiState,
-        // Передаем лямбда-функцию для обработки кликов по десерту,
-        // которая вызывает onDessertClicked в ViewModel.
+        uiState = uiState, // Состояние: данные для отображения
+        // Событие: лямбда-функция, которая вызывает onDessertClicked в ViewModel.
         onDessertClicked = viewModel::onDessertClicked
     )
 }
 
+// 5. Composable-функция, принимающая состояние и события (UDF)
 @Composable
 private fun DessertClickerApp(
     // Получаем текущее состояние пользовательского интерфейса (доход, проданные десерты и т.д.)
@@ -144,8 +165,10 @@ private fun DessertClickerApp(
     // Получаем функцию для обработки клика по десерту
     onDessertClicked: () -> Unit
 ) {
+    // Scaffold предоставляет базовую структуру UI (AppBar, Content, FloatingActionButton и т.д.)
     Scaffold(
         topBar = {
+            // Получаем Context для запуска Intent (Side Effect)
             val intentContext = LocalContext.current
             AppBar(
                 onShareButtonClicked = {
@@ -159,39 +182,44 @@ private fun DessertClickerApp(
             )
         }
     ) { contentPadding ->
+        // Основной экран приложения
         DessertClickerScreen(
             // Передаем данные о доходе и проданных десертах в дочернюю компонуемую функцию
             revenue = uiState.revenue,
             dessertsSold = uiState.dessertsSold,
             dessertImageId = uiState.currentDessertImageId,
-            onDessertClicked = onDessertClicked,
+            onDessertClicked = onDessertClicked, // Передача обработчика клика
             modifier = Modifier.padding(contentPadding)
         )
     }
 }
 
+// 6. Composable-функция для верхней панели (AppBar)
 @Composable
 private fun AppBar(
-    onShareButtonClicked: () -> Unit,
+    onShareButtonClicked: () -> Unit, // Лямбда-функция для обработки нажатия кнопки "Поделиться"
     modifier: Modifier = Modifier
 ) {
+    // Row для горизонтального расположения элементов
     Row(
         modifier = modifier.fillMaxWidth().background(MaterialTheme.colorScheme.primary),
-        horizontalArrangement = Arrangement.SpaceBetween,
+        horizontalArrangement = Arrangement.SpaceBetween, // Располагает элементы по краям
         verticalAlignment = Alignment.CenterVertically,
     ) {
+        // Текст заголовка приложения
         Text(
             text = stringResource(R.string.app_name),
             modifier = Modifier.padding(start = dimensionResource(R.dimen.padding_medium)),
             color = MaterialTheme.colorScheme.onPrimary,
             style = MaterialTheme.typography.titleLarge,
         )
+        // Кнопка "Поделиться"
         IconButton(
-            onClick = onShareButtonClicked,
+            onClick = onShareButtonClicked, // Вызывает переданную лямбда-функцию
             modifier = Modifier.padding(end = dimensionResource(R.dimen.padding_medium)),
         ) {
             Icon(
-                imageVector = Icons.Filled.Share,
+                imageVector = Icons.Filled.Share, // Использование встроенной иконки
                 contentDescription = stringResource(R.string.share),
                 tint = MaterialTheme.colorScheme.onPrimary
             )
@@ -199,15 +227,18 @@ private fun AppBar(
     }
 }
 
+// 7. Composable-функция для основного экрана
 @Composable
 fun DessertClickerScreen(
     revenue: Int,
     dessertsSold: Int,
-    @DrawableRes dessertImageId: Int,
+    @DrawableRes dessertImageId: Int, // Аннотация указывает, что это ID ресурса Drawable
     onDessertClicked: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    // Box позволяет накладывать элементы друг на друга
     Box(modifier = modifier) {
+        // Фоновое изображение
         Image(
             painter = painterResource(R.drawable.bakery_back),
             contentDescription = null,
@@ -215,11 +246,13 @@ fun DessertClickerScreen(
             modifier = Modifier.fillMaxSize(),
         )
         Column {
+            // Контейнер для изображения десерта
             Box(
                 modifier = Modifier
-                    .weight(1f)
+                    .weight(1f) // Занимает все оставшееся вертикальное пространство
                     .fillMaxWidth(),
             ) {
+                // Изображение десерта
                 Image(
                     painter = painterResource(dessertImageId),
                     contentDescription = null,
@@ -227,10 +260,12 @@ fun DessertClickerScreen(
                         .width(dimensionResource(R.dimen.image_size))
                         .height(dimensionResource(R.dimen.image_size))
                         .align(Alignment.Center)
+                        // Точка, где происходит событие клика, которое передается в ViewModel
                         .clickable { onDessertClicked() },
                     contentScale = ContentScale.Crop,
                 )
             }
+            // Панель с информацией о транзакциях
             TransactionInfo(
                 revenue = revenue,
                 dessertsSold = dessertsSold,
@@ -240,6 +275,7 @@ fun DessertClickerScreen(
     }
 }
 
+// 8. Вспомогательные Composable-функции для отображения информации
 @Composable
 private fun TransactionInfo(
     revenue: Int,
@@ -301,6 +337,7 @@ private fun DessertsSoldInfo(dessertsSold: Int, modifier: Modifier = Modifier) {
     }
 }
 
+
 @Preview(showBackground = true)
 @Composable
 fun DessertClickerAppPreview() {
@@ -311,3 +348,4 @@ fun DessertClickerAppPreview() {
         )
     }
 }
+

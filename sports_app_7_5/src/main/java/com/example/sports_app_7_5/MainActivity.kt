@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                                 .calculateEndPadding(layoutDirection)
                         )
                 ) {
-                    val windowSize = calculateWindowSizeClass(this)
+                    val windowSize = calculateWindowSizeClass(this) // определяется размер
                     SportsApp(
                         windowSize = windowSize.widthSizeClass,
                         onBackPressed = { finish() }

@@ -1,18 +1,3 @@
-/*
- * Copyright (C) 2023 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.example.reply_7_4.ui
 
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
@@ -27,28 +12,38 @@ import com.example.reply_7_4.ui.utils.ReplyNavigationType
 
 @Composable
 fun ReplyApp(
+    // Параметр, который определяет ширину окна (Compact, Medium, Expanded).
     windowSize: WindowWidthSizeClass,
     modifier: Modifier = Modifier,
 ) {
-    val navigationType: ReplyNavigationType
-    val contentType: ReplyContentType
+    val navigationType: ReplyNavigationType // Переменная для хранения выбранного типа навигации
+    val contentType: ReplyContentType // Переменная для хранения выбранного типа контента
+
+    // Создание ViewModel. Она будет жить дольше, чем этот Composable.
     val viewModel: ReplyViewModel = viewModel()
+
+    // Наблюдение за состоянием UI из ViewModel.
     val replyUiState = viewModel.uiState.collectAsState().value
 
+    // Логика адаптивного дизайна: выбор UI в зависимости от ширины окна.
     when (windowSize) {
         WindowWidthSizeClass.Compact -> {
-            navigationType = ReplyNavigationType.BOTTOM_NAVIGATION
-            contentType = ReplyContentType.LIST_ONLY
+            // Телефон
+            navigationType = ReplyNavigationType.BOTTOM_NAVIGATION // Навигация снизу
+            contentType = ReplyContentType.LIST_ONLY // Показываем только список (детали на весь экран)
         }
         WindowWidthSizeClass.Medium -> {
-            navigationType = ReplyNavigationType.NAVIGATION_RAIL
-            contentType = ReplyContentType.LIST_ONLY
+            //   маленький планшет
+            navigationType = ReplyNavigationType.NAVIGATION_RAIL // Боковая навигационная рельса
+            contentType = ReplyContentType.LIST_ONLY // Показываем только список
         }
         WindowWidthSizeClass.Expanded -> {
-            navigationType = ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER
-            contentType = ReplyContentType.LIST_AND_DETAIL
+            // Большой планшет
+            navigationType = ReplyNavigationType.PERMANENT_NAVIGATION_DRAWER // Постоянный боковой ящик
+            contentType = ReplyContentType.LIST_AND_DETAIL // Список и детали показываются одновременно
         }
         else -> {
+            // Значение по умолчанию (на всякий случай)
             navigationType = ReplyNavigationType.BOTTOM_NAVIGATION
             contentType = ReplyContentType.LIST_ONLY
         }

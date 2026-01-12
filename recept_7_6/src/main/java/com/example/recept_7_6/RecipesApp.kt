@@ -37,7 +37,7 @@ import com.example.recept_7_6.ui.theme.GreetingCardTheme
 
 @Composable
 fun RecipesApp(
-    navController: NavHostController = rememberNavController(),
+    navController: NavHostController = rememberNavController(), //контроль где мы сейчас
     viewModel: RecipesViewModel = viewModel()
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()

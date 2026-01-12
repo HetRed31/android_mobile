@@ -58,10 +58,8 @@ import com.example.sports_app_7_5.model.Sport
 import com.example.sports_app_7_5.ui.theme.SportsTheme
 import com.example.sports_app_7_5.utils.SportsContentType
 
-/**
- * Main composable that serves as container
- * which displays content according to [uiState] and [windowSize]
- */
+
+
 @Composable
 fun SportsApp(
     windowSize: WindowWidthSizeClass,
@@ -69,28 +67,38 @@ fun SportsApp(
 ) {
     val viewModel: SportsViewModel = viewModel()
     val uiState by viewModel.uiState.collectAsState()
-    val contentType = when (windowSize) {
-        WindowWidthSizeClass.Compact,
-        WindowWidthSizeClass.Medium -> SportsContentType.ListOnly
 
-        WindowWidthSizeClass.Expanded -> SportsContentType.ListAndDetail
+    //  (АДАПТИВНОСТЬ) ===
+    // Определяем тип контента (макета) на основе ширины окна (windowSize)
+    val contentType = when (windowSize) {
+        // Если ширина экрана "Компактная" или "Средняя" (телефоны, небольшие планшеты)
+        WindowWidthSizeClass.Compact,
+        WindowWidthSizeClass.Medium -> SportsContentType.ListOnly // -> Используем однопанельный макет
+
+        // Если ширина экрана "Расширенная" (большие планшеты)
+        WindowWidthSizeClass.Expanded -> SportsContentType.ListAndDetail // -> Используем двухпанельный макет
         else -> SportsContentType.ListOnly
     }
+
 
     Scaffold(
         topBar = {
             SportsAppBar(
                 isShowingListPage = uiState.isShowingListPage,
+                // Логика возврата: при нажатии на кнопку "Назад" в TopBar вызывается navigateToListPage()
                 onBackButtonClick = { viewModel.navigateToListPage() },
                 windowSize = windowSize
             )
         }
     ) { innerPadding ->
+        // === НАЧАЛО ВЫБОРА МАКЕТА ===
         if (contentType == SportsContentType.ListAndDetail) {
+            // 1. Двухпанельный макет (для Expanded/планшетов)
             SportsListAndDetail(
                 sports = uiState.sportsList,
                 selectedSport = uiState.currentSport,
                 onClick = {
+                    // При нажатии на элемент в двухпанельном режиме просто обновляем детали справа
                     viewModel.updateCurrentSport(it)
                 },
                 onBackPressed = onBackPressed,
@@ -98,31 +106,39 @@ fun SportsApp(
                 modifier = Modifier.fillMaxWidth()
             )
         } else {
+            // 2. Однопанельный макет (для Compact/Medium/телефонов)
             if (uiState.isShowingListPage) {
+                // Если флаг isShowingListPage == true, показываем СПИСОК
                 SportsList(
                     sports = uiState.sportsList,
                     onClick = {
-                        viewModel.updateCurrentSport(it)
-                        viewModel.navigateToDetailPage()
+                        // === НАЧАЛО ЛОГИКИ НАВИГАЦИИ (ПРОВАЛИВАНИЕ ДАЛЬШЕ) ===
+                        viewModel.updateCurrentSport(it) // 1. Обновляем выбранный вид спорта в ViewModel
+                        viewModel.navigateToDetailPage() // 2. Устанавливаем флаг isShowingListPage = false, что вызывает перерисовку на SportsDetail
+                        // === КОНЕЦ ЛОГИКИ НАВИГАЦИИ (ПРОВАЛИВАНИЕ ДАЛЬШЕ) ===
                     },
                     modifier = Modifier.padding(horizontal = dimensionResource(R.dimen.padding_medium)),
                     contentPadding = innerPadding,
                 )
             } else {
+                // Если флаг isShowingListPage == false, показываем ДЕТАЛИ
                 SportsDetail(
                     selectedSport = uiState.currentSport,
                     contentPadding = innerPadding,
                     onBackPressed = {
-                        viewModel.navigateToListPage()
+                        // === НАЧАЛО ЛОГИКИ НАВИГАЦИИ (ВОЗВРАТ) ===
+                        viewModel.navigateToListPage() // Устанавливает флаг isShowingListPage = true, что вызывает перерисовку на SportsList
+                        // === КОНЕЦ ЛОГИКИ НАВИГАЦИИ (ВОЗВРАТ) ===
                     }
                 )
             }
         }
+        // === КОНЕЦ ВЫБОРА МАКЕТА ===
     }
 }
 
 /**
- * Composable that displays the topBar and displays back button if back navigation is possible.
+ * Composable, который отображает верхнюю панель и кнопку "Назад", если возможна навигация назад.
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -132,27 +148,30 @@ fun SportsAppBar(
     windowSize: WindowWidthSizeClass,
     modifier: Modifier = Modifier
 ) {
+    // Определяем, нужно ли показывать кнопку "Назад" (только в однопанельном режиме на экране деталей)
     val isShowingDetailPage = windowSize != WindowWidthSizeClass.Expanded && !isShowingListPage
     TopAppBar(
         title = {
             Text(
                 text =
-                if (isShowingDetailPage) {
-                    stringResource(R.string.detail_fragment_label)
-                } else {
-                    stringResource(R.string.list_fragment_label)
-                },
+                    if (isShowingDetailPage) {
+                        stringResource(R.string.detail_fragment_label)
+                    } else {
+                        stringResource(R.string.list_fragment_label)
+                    },
                 fontWeight = FontWeight.Bold
             )
         },
         navigationIcon = if (isShowingDetailPage) {
             {
-                IconButton(onClick = onBackButtonClick) {
+                // === ЛОГИКА НАВИГАЦИИ (ВОЗВРАТ ЧЕРЕЗ TOPBAR) ===
+                IconButton(onClick = onBackButtonClick) { // onBackButtonClick вызывает viewModel.navigateToListPage()
                     Icon(
                         imageVector = Icons.Filled.ArrowBack,
                         contentDescription = stringResource(R.string.back_button)
                     )
                 }
+                // === КОНЕЦ ЛОГИКИ НАВИГАЦИИ (ВОЗВРАТ ЧЕРЕЗ TOPBAR) ===
             }
         } else {
             { Box {} }
@@ -171,34 +190,39 @@ private fun SportsListItem(
     onItemClick: (Sport) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    // === НАЧАЛО СТРУКТУРЫ КАРТОЧКИ ===
     Card(
         elevation = CardDefaults.cardElevation(),
         modifier = modifier,
         shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner_radius)),
-        onClick = { onItemClick(sport) }
+        onClick = { onItemClick(sport) } // Обработчик нажатия на карточку
     ) {
-        Row(
+        Row( // Горизонтальный контейнер для всего содержимого карточки
             modifier = Modifier
                 .fillMaxWidth()
                 .size(dimensionResource(R.dimen.card_image_height))
         ) {
+            // 1. Изображение (SportsListImageItem) - занимает фиксированную ширину
             SportsListImageItem(
                 sport = sport,
                 modifier = Modifier.size(dimensionResource(R.dimen.card_image_height))
             )
+            // 2. Колонка с текстовым контентом - занимает оставшееся место
             Column(
                 modifier = Modifier
                     .padding(
                         vertical = dimensionResource(R.dimen.padding_small),
                         horizontal = dimensionResource(R.dimen.padding_medium)
                     )
-                    .weight(1f)
+                    .weight(1f) // Позволяет колонке занять всю оставшуюся ширину
             ) {
+                // Название спорта
                 Text(
                     text = stringResource(sport.titleResourceId),
                     style = MaterialTheme.typography.titleMedium,
                     modifier = Modifier.padding(bottom = dimensionResource(R.dimen.card_text_vertical_space))
                 )
+                // Подзаголовок
                 Text(
                     text = stringResource(sport.subtitleResourceId),
                     style = MaterialTheme.typography.bodySmall,
@@ -206,8 +230,9 @@ private fun SportsListItem(
                     overflow = TextOverflow.Ellipsis,
                     maxLines = 3
                 )
-                Spacer(Modifier.weight(1f))
-                Row {
+                Spacer(Modifier.weight(1f)) // Отталкивает нижнюю строку к низу колонки
+                Row { // Нижняя строка с деталями
+                    // Количество игроков
                     Text(
                         text = pluralStringResource(
                             R.plurals.player_count_caption,
@@ -216,8 +241,9 @@ private fun SportsListItem(
                         ),
                         style = MaterialTheme.typography.bodySmall
                     )
-                    Spacer(Modifier.weight(1f))
+                    Spacer(Modifier.weight(1f)) // Отталкивает олимпийский статус вправо
                     if (sport.olympic) {
+                        // Олимпийский статус
                         Text(
                             text = stringResource(R.string.olympic_caption),
                             style = MaterialTheme.typography.labelMedium
@@ -227,6 +253,7 @@ private fun SportsListItem(
             }
         }
     }
+    // === КОНЕЦ СТРУКТУРЫ КАРТОЧКИ ===
 }
 
 @Composable
@@ -258,7 +285,7 @@ private fun SportsList(
         items(sports, key = { sport -> sport.id }) { sport ->
             SportsListItem(
                 sport = sport,
-                onItemClick = onClick
+                onItemClick = onClick // Передаем обработчик нажатия из SportsApp
             )
         }
     }
@@ -271,9 +298,11 @@ private fun SportsDetail(
     contentPadding: PaddingValues,
     modifier: Modifier = Modifier
 ) {
+    // === ЛОГИКА НАВИГАЦИИ (ВОЗВРАТ ЧЕРЕЗ СИСТЕМНУЮ КНОПКУ "НАЗАД") ===
     BackHandler {
-        onBackPressed()
+        onBackPressed() // Вызывает viewModel.navigateToListPage()
     }
+    // === КОНЕЦ ЛОГИКИ НАВИГАЦИИ (ВОЗВРАТ ЧЕРЕЗ СИСТЕМНУЮ КНОПКУ "НАЗАД") ===
     val scrollState = rememberScrollState()
     val layoutDirection = LocalLayoutDirection.current
     Box(
@@ -359,10 +388,11 @@ private fun SportsListAndDetail(
     modifier: Modifier = Modifier,
     contentPadding: PaddingValues = PaddingValues(0.dp),
 ) {
+    // === ДВУХПАНЕЛЬНЫЙ МАКЕТ (для Expanded/планшетов) ===
     Row(
         modifier = modifier
     ) {
-        SportsList(
+        SportsList( // Список слева (занимает 2/5 ширины)
             sports = sports,
             onClick = onClick,
             contentPadding = PaddingValues(
@@ -372,7 +402,7 @@ private fun SportsListAndDetail(
                 .weight(2f)
                 .padding(horizontal = dimensionResource(R.dimen.padding_medium))
         )
-        SportsDetail(
+        SportsDetail( // Детали справа (занимает 3/5 ширины)
             selectedSport = selectedSport,
             modifier = Modifier.weight(3f),
             contentPadding = PaddingValues(
@@ -381,6 +411,7 @@ private fun SportsListAndDetail(
             onBackPressed = onBackPressed,
         )
     }
+    // === КОНЕЦ ДВУХПАНЕЛЬНОГО МАКЕТА ===
 }
 
 @Preview

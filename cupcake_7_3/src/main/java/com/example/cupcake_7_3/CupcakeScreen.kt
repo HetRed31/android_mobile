@@ -39,7 +39,7 @@ import com.example.cupcake_7_3.ui.SelectOptionScreen
 import com.example.cupcake_7_3.ui.StartOrderScreen
 
 /**
- * enum values that represent the screens in the app
+ * enum: Определяет все маршруты (экраны) для навигации.
  */
 enum class CupcakeScreen(@StringRes val title: Int) {
     Start(title = R.string.app_name),
@@ -49,7 +49,7 @@ enum class CupcakeScreen(@StringRes val title: Int) {
 }
 
 /**
- * Composable that displays the topBar and displays back button if back navigation is possible.
+ * Компонент TopAppBar: Отображает заголовок и кнопку "Назад".
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -66,6 +66,7 @@ fun CupcakeAppBar(
         ),
         modifier = modifier,
         navigationIcon = {
+            // Кнопка "Назад" отображается, только если возможна навигация назад.
             if (canNavigateBack) {
                 IconButton(onClick = navigateUp) {
                     Icon(
@@ -78,15 +79,19 @@ fun CupcakeAppBar(
     )
 }
 
+/**
+ * Главный компонент приложения: Управляет ViewModel и Навигацией.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CupcakeApp(
+    // ViewModel создается здесь и будет жить до тех пор, пока живет Activity.
     viewModel: OrderViewModel = viewModel(),
+    // NavController управляет стеком экранов.
     navController: NavHostController = rememberNavController()
 ) {
-    // Get current back stack entry
+    // Получаем текущий экран для обновления заголовка TopAppBar.
     val backStackEntry by navController.currentBackStackEntryAsState()
-    // Get the name of the current screen
     val currentScreen = CupcakeScreen.valueOf(
         backStackEntry?.destination?.route ?: CupcakeScreen.Start.name
     )
@@ -95,26 +100,34 @@ fun CupcakeApp(
         topBar = {
             CupcakeAppBar(
                 currentScreen = currentScreen,
+                // Проверяем, есть ли предыдущий экран в стеке.
                 canNavigateBack = navController.previousBackStackEntry != null,
+                // navigateUp() возвращает на предыдущий экран.
                 navigateUp = { navController.navigateUp() }
             )
         }
     ) { innerPadding ->
+        // Наблюдаем за состоянием заказа из ViewModel.
+        // uiState содержит все данные (количество, вкус, цена).
         val uiState by viewModel.uiState.collectAsState()
 
+        // NavHost: Контейнер, который переключает Composable-экраны.
         NavHost(
             navController = navController,
-            startDestination = CupcakeScreen.Start.name,
+            startDestination = CupcakeScreen.Start.name, // Точка входа
             modifier = Modifier
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .padding(innerPadding)
         ) {
+            // ЭКРАН 1: Start (Выбор количества)
             composable(route = CupcakeScreen.Start.name) {
                 StartOrderScreen(
                     quantityOptions = DataSource.quantityOptions,
                     onNextButtonClicked = {
+                        // 1. Обновляем ViewModel: сохраняем выбранное количество.
                         viewModel.setQuantity(it)
+                        // 2. Навигация: переходим на экран выбора вкуса.
                         navController.navigate(CupcakeScreen.Flavor.name)
                     },
                     modifier = Modifier
@@ -122,39 +135,50 @@ fun CupcakeApp(
                         .padding(dimensionResource(R.dimen.padding_medium))
                 )
             }
+
+            // ЭКРАН 2: Flavor (Выбор вкуса)
             composable(route = CupcakeScreen.Flavor.name) {
                 val context = LocalContext.current
                 SelectOptionScreen(
+                    // subtotal берется из uiState (ViewModel) и автоматически обновляется.
                     subtotal = uiState.price,
                     onNextButtonClicked = { navController.navigate(CupcakeScreen.Pickup.name) },
                     onCancelButtonClicked = {
-                        cancelOrderAndNavigateToStart(viewModel, navController)
+                        cancelOrderAndNavigateToStart(viewModel, navController) // Отмена заказа
                     },
                     options = DataSource.flavors.map { id -> context.resources.getString(id) },
+                    // Обновляем ViewModel при выборе вкуса.
                     onSelectionChanged = { viewModel.setFlavor(it) },
                     modifier = Modifier.fillMaxHeight()
                 )
             }
+
+            // ЭКРАН 3: Pickup (Выбор даты)
             composable(route = CupcakeScreen.Pickup.name) {
                 SelectOptionScreen(
-                    subtotal = uiState.price,
+                    subtotal = uiState.price, // Цена снова берется из uiState.
                     onNextButtonClicked = { navController.navigate(CupcakeScreen.Summary.name) },
                     onCancelButtonClicked = {
                         cancelOrderAndNavigateToStart(viewModel, navController)
                     },
                     options = uiState.pickupOptions,
+                    // Обновляем ViewModel при выборе даты.
                     onSelectionChanged = { viewModel.setDate(it) },
                     modifier = Modifier.fillMaxHeight()
                 )
             }
+
+            // ЭКРАН 4: Summary (Сводка заказа)
             composable(route = CupcakeScreen.Summary.name) {
                 val context = LocalContext.current
                 OrderSummaryScreen(
+                    // Передаем весь объект состояния для отображения всех деталей.
                     orderUiState = uiState,
                     onCancelButtonClicked = {
                         cancelOrderAndNavigateToStart(viewModel, navController)
                     },
                     onSendButtonClicked = { subject: String, summary: String ->
+                        // Вызов функции для отправки заказа через Intent.
                         shareOrder(context, subject = subject, summary = summary)
                     },
                     modifier = Modifier.fillMaxHeight()
@@ -165,21 +189,22 @@ fun CupcakeApp(
 }
 
 /**
- * Resets the [OrderUiState] and pops up to [CupcakeScreen.Start]
+ * Вспомогательная функция: Сбрасывает состояние заказа и возвращает на стартовый экран.
  */
 private fun cancelOrderAndNavigateToStart(
     viewModel: OrderViewModel,
     navController: NavHostController
 ) {
-    viewModel.resetOrder()
+    viewModel.resetOrder() // Сброс всех данных в ViewModel.
+    // popBackStack: Очищает стек навигации до экрана Start.
     navController.popBackStack(CupcakeScreen.Start.name, inclusive = false)
 }
 
 /**
- * Creates an intent to share order details
+ * Вспомогательная функция: Создает Intent для отправки деталей заказа.
  */
 private fun shareOrder(context: Context, subject: String, summary: String) {
-    // Create an ACTION_SEND implicit intent with order details in the intent extras
+    // Создание неявного Intent для отправки текста (например, через почту или мессенджер).
     val intent = Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
         putExtra(Intent.EXTRA_SUBJECT, subject)

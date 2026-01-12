@@ -9,23 +9,37 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_6">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="14c86fe8-171d-4bc6-b7ac-b97a6ba1d777" name="Changes" comment="7_6 full">
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept_7_6.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/CupcakeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/CupcakeScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/OrderViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/OrderViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/SelectOptionScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/SelectOptionScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/StartOrderScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/cupcake_7_3/src/main/java/com/example/cupcake_7_3/ui/StartOrderScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/dessert_7_1/src/main/java/com/example/dessert_7_1/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/RecipesApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/RecipesApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipeDetails.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipeDetails.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/recept_7_6/src/main/java/com/example/recept_7_6/ui/RecipesViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyApp.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyDetailsScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyDetailsScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyHomeContent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyHomeContent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyHomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyHomeScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyUiState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyUiState.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/ReplyViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/utils/ReplyNavigationType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/utils/WindowStateUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reply_7_4/src/main/java/com/example/reply_7_4/ui/utils/WindowStateUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsScreens.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsScreens.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/sports_app_7_5/src/main/java/com/example/sports_app_7_5/ui/SportsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/data/DessertUiState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/data/WordsData.kt" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/data/WordsData.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/DessertViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/unscramble_7_2/src/main/java/com/example/unscramble_7_2/ui/GameViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,36 +104,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.Affirmations_App_6_1.executor": "Run",
-    "Android App.app.executor": "Run",
-    "Android App.coctale.executor": "Run",
-    "Android App.courses_6_2.executor": "Run",
-    "Android App.cupcake_7_3.executor": "Run",
-    "Android App.dessert_7_1.executor": "Run",
-    "Android App.navigation.executor": "Run",
-    "Android App.recept_7_6.executor": "Run",
-    "Android App.reply_7_4.executor": "Run",
-    "Android App.sports_app_7_5.executor": "Run",
-    "Android App.superhero_6_4.executor": "Run",
-    "Android App.unscramble_7_2.executor": "Run",
-    "Android App.woof_6_3.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "ResourceManagerPrefKey.ModuleName": "lab4.coctale.main",
-    "ResourceManagerPrefKey.ResourceType": "DRAWABLE",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Shelkovskikh-AVB-22-1-lab-7",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.Affirmations_App_6_1.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.coctale.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.courses_6_2.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.cupcake_7_3.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.dessert_7_1.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.navigation.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.recept_7_6.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.reply_7_4.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.sports_app_7_5.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.superhero_6_4.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.unscramble_7_2.executor&quot;: &quot;Run&quot;,
+    &quot;Android App.woof_6_3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;ResourceManagerPrefKey.ModuleName&quot;: &quot;lab4.coctale.main&quot;,
+    &quot;ResourceManagerPrefKey.ResourceType&quot;: &quot;DRAWABLE&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on Shelkovskikh-AVB-22-1-lab-7&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Android App.recept_7_6">
     <configuration name="Affirmations_App_6_1" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="lab4.Affirmations_App_6_1" />
@@ -1328,7 +1342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766570420605</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="7_6 full">
+      <option name="closed" value="true" />
+      <created>1766574525709</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1766574525709</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1367,7 +1389,8 @@
     <MESSAGE value="7_4" />
     <MESSAGE value="7_5" />
     <MESSAGE value="7_6" />
-    <option name="LAST_COMMIT_MESSAGE" value="7_6" />
+    <MESSAGE value="7_6 full" />
+    <option name="LAST_COMMIT_MESSAGE" value="7_6 full" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

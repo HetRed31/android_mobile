@@ -17,7 +17,16 @@
       <SelectionState runConfigName="woof_6_3">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="sfd">
+      <SelectionState runConfigName="9_1_inventory_app">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="dessert_9_3">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="flight_search_9_4">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="bus_schedule_9_2">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

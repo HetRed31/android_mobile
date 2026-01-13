@@ -20,5 +20,9 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "lab4"
-include(":app")
-include(":sfd")
+
+include(":9_1_inventory_app")
+
+include(":dessert_9_3")
+include(":flight_search_9_4")
+include(":bus_schedule_9_2")

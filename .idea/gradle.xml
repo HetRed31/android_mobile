@@ -10,8 +10,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/sfd" />
+            <option value="$PROJECT_DIR$/9_1_inventory_app" />
+            <option value="$PROJECT_DIR$/bus_schedule_9_2" />
+            <option value="$PROJECT_DIR$/dessert_9_3" />
+            <option value="$PROJECT_DIR$/flight_search_9_4" />
           </set>
         </option>
       </GradleProjectSettings>

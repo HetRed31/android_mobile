@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Affirmations_App_6_1" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/art_space_5_4" />
+            <option value="$PROJECT_DIR$/calculator_5_3" />
+            <option value="$PROJECT_DIR$/coctale" />
+            <option value="$PROJECT_DIR$/courses_6_2" />
+            <option value="$PROJECT_DIR$/cupcake_7_3" />
+            <option value="$PROJECT_DIR$/dessert_7_1" />
+            <option value="$PROJECT_DIR$/dice_roller_5_1" />
+            <option value="$PROJECT_DIR$/lemonade_5_2" />
+            <option value="$PROJECT_DIR$/navigation" />
+            <option value="$PROJECT_DIR$/recept_7_6" />
+            <option value="$PROJECT_DIR$/reply_7_4" />
+            <option value="$PROJECT_DIR$/sports_app_7_5" />
+            <option value="$PROJECT_DIR$/superhero_6_4" />
+            <option value="$PROJECT_DIR$/superheroes_6_4" />
+            <option value="$PROJECT_DIR$/test_1" />
+            <option value="$PROJECT_DIR$/unscramble_7_2" />
+            <option value="$PROJECT_DIR$/woof/app" />
+            <option value="$PROJECT_DIR$/woof_6_3" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
